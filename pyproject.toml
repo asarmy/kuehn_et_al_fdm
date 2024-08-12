@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kuehn_et_al_fdm"
+version = "1.0.0"
+description = "Implementations of the Kuehn et al. 2024 Fault Displacement Model"
+authors = [
+    { name = "Alex Sarmiento" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.7"
+dependencies = [
+	"numpy",
+    "pandas",
+    "scipy",
+]
+
+[project.optional-dependencies]
+examples = [
+    "jupyter",
+    "matplotlib",
+	"statsmodels",
+]
+dev = [
+    "pytest",
+	"pytest-cov",
+    "black",
+    "flake8",
+    "twine",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinxcontrib-bibtex",
+    "pydocstyle",
+    "myst-parser",
+    "pre-commit",
+	"toml"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = { find = { where = ["src"] } }
+include-package-data = true
+
+[tool.coverage.run]
+relative_files = true
+
+[project.scripts]
+kea-stat_params = "kuehn_et_al_fdm.calc_params:main"
+kea-displ_site = "kuehn_et_al_fdm.calc_displ_site:main"
+kea-displ_avg = "kuehn_et_al_fdm.calc_displ_avg:main"
+kea-displ_profile = "kuehn_et_al_fdm.calc_displ_profile:main"
+kea-prob_exceed = "kuehn_et_al_fdm.calc_prob_exceed:main"
+kea-prob_occur = "kuehn_et_al_fdm.calc_prob_occur:main"
+kea = "kuehn_et_al_fdm._help:main"
+
+[project.urls]
+homepage = "https://github.com/asarmy/kuehn_et_al_fdm"
+repository = "https://github.com/asarmy/kuehn_et_al_fdm"
