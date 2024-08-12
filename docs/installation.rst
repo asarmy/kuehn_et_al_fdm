@@ -7,7 +7,7 @@ To install the package, run the following command in your terminal:
 
 .. code-block:: bash
 
-    pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ kuehn_et_al_fdm
+    pip install -i https://test.pypi.org/simple/ kuehn-et-al-fdm
 
 This command instructs `pip` to:
 
