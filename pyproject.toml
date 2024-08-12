@@ -60,3 +60,4 @@ kea = "kuehn_et_al_fdm._help:main"
 [project.urls]
 homepage = "https://github.com/asarmy/kuehn_et_al_fdm"
 repository = "https://github.com/asarmy/kuehn_et_al_fdm"
+documentation = "https://kuehn-et-al-fdm.readthedocs.io/en/latest/index.html"
