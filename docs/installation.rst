@@ -13,3 +13,5 @@ This command instructs `pip` to:
 
 1. Use the Test PyPI repository as the primary source for the package.
 2. Fall back to the main PyPI repository for any dependencies that are not available on Test PyPI.
+
+The package dependencies (`numpy`, `pandas`, and `scipy`) do not have specific version requirements, so installing this package with `pip` should not interfere with a Conda environment.

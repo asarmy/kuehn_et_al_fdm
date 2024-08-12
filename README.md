@@ -12,7 +12,11 @@
 
 ## Overview
 
-Python Implementation of the Kuehn et al. (2024) Fault Displacement Model
+Python Implementation of the Kuehn et al. (2024) Fault Displacement Model.
+
+The model is documented in:
+> Kuehn NM, Kottke AR, Sarmiento AC, Madugo CM and Bozorgnia Y (2024). A fault displacement model based on the FDHI database: *Earthquake Spectra*, Epub ahead of print, DOI: 10.1177/ToBeAssigned.
+
 
 To install the package, follow the instructions in the [Installation Guide](https://kuehn-et-al-fdm.readthedocs.io/en/latest/installation.html).
 
