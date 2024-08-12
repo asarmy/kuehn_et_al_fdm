@@ -64,7 +64,7 @@ repos:
         types: [python]
     -   id: twine
         name: twine-check-and-upload
-        entry: bash -c "twine check dist/* && twine upload dist/*"
+        entry: bash -c "twine check dist/* && twine upload -r testpypi dist/*"
         language: system
         pass_filenames: false
         stages: [manual]

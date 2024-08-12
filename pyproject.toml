@@ -36,7 +36,8 @@ dev = [
     "pydocstyle",
     "myst-parser",
     "pre-commit",
-	"toml"
+	"toml",
+	"build"
 ]
 
 [tool.setuptools]
