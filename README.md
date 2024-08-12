@@ -20,7 +20,7 @@ The model is documented in:
 
 To install the package, follow the instructions in the [Installation Guide](https://kuehn-et-al-fdm.readthedocs.io/en/latest/installation.html).
 
-See the [Quick Usage Guide](https://kuehn-et-al-fdm.readthedocs.io/en/latest/quickstart.html) to get started.
+See the [Quick Usage Guide](https://kuehn-et-al-fdm.readthedocs.io/en/latest/usage.html) to get started.
 
 ## License
 
