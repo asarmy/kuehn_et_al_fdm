@@ -74,8 +74,11 @@ html_static_path = ["_static"]
 # Specify the location of your BibTeX files
 bibtex_bibfiles = ["references.bib"]
 
-# Hidden doesn't work in index, exclude here
+# Hidden doesn't seem to work in index, exclude here
 exclude_patterns = ["modules.rst"]
 
 # Hide private files
 autodoc_default_options = {"private-members": False}
+
+# Needed to get docstrings to show on RTD
+autodoc_mock_imports = ["numpy"]
