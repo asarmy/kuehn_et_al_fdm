@@ -81,4 +81,4 @@ exclude_patterns = ["modules.rst"]
 autodoc_default_options = {"private-members": False}
 
 # Needed to get docstrings to show on RTD
-autodoc_mock_imports = ["numpy", "pandas", "scipy"]
+autodoc_mock_imports = ["numpy", "pandas", "scipy", "kuehn_et_al_fdm"]
