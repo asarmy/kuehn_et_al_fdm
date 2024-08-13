@@ -7,7 +7,7 @@ Submodules
 kuehn\_et\_al\_fdm.calc\_displ\_avg module
 ------------------------------------------
 
-.. automodule:: kuehn_et_al_fdm.calc_displ_avg
+.. automodule:: kuehn_et_al_fdm::calc_displ_avg
    :members:
    :undoc-members:
    :show-inheritance:
