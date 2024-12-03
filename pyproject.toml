@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kuehn_et_al_fdm"
-version = "1.0.0"
+version = "1.0.1"
 description = "Implementations of the Kuehn et al. 2024 Fault Displacement Model"
 authors = [
     { name = "Alex Sarmiento" }

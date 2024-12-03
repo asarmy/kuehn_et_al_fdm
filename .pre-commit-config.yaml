@@ -39,7 +39,7 @@ repos:
             |var
             )/
 -   repo: https://github.com/pycqa/flake8
-    rev: '3.9.2'
+    rev: '7.1.1'
     hooks:
     -   id: flake8
         args:
@@ -64,7 +64,7 @@ repos:
         types: [python]
     -   id: twine
         name: twine-check-and-upload
-        entry: bash -c "twine check dist/* && twine upload -r testpypi dist/*"
+        entry: bash -c "set -x; twine check dist/* && twine upload dist/*"
         language: system
         pass_filenames: false
         stages: [manual]
