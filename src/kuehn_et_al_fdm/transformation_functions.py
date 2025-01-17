@@ -66,3 +66,26 @@ def _calc_transformed_displ(bc_parameter, mean, stdv, quantile):
         displ_bc = stats.norm.ppf(quantile, loc=mean, scale=stdv)
 
     return displ_bc
+
+
+def _convert_bc_to_meters(Y_value, bc_parameter):
+    """
+    Helper function to convert from transformed units (Y) to arithmetic units (meters).
+
+    Parameters
+    ----------
+    Y_value : int or float or numpy.ndarray with a single element
+        Mean displacement in transformed units.
+
+    bc_parameter : int or float or numpy.ndarray with a single element
+        Box-Cox transformation parameter "lambda".
+
+    Returns
+    -------
+    displ : int or float or numpy.ndarray with a single element
+        Predicted displacement in meters. If displacement is less than 1 mm, return zero.
+    """
+    with np.errstate(invalid="ignore"):
+        # Handle values that are too small to calculate
+        displ = np.power(Y_value * bc_parameter + 1, 1 / bc_parameter)
+        return np.where(np.isnan(displ) | (displ < 0.001), 0, displ)

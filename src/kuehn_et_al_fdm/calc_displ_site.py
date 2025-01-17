@@ -9,7 +9,7 @@ import pandas as pd
 
 # Module imports
 from kuehn_et_al_fdm.calc_params import _calc_params
-from kuehn_et_al_fdm.transformation_functions import _calc_transformed_displ
+from kuehn_et_al_fdm.transformation_functions import _calc_transformed_displ, _convert_bc_to_meters
 from kuehn_et_al_fdm._common_args import *  # noqa: F403 *
 
 
@@ -25,7 +25,8 @@ def calc_displ_site(
     override=False,
 ):
     """
-    Calculate the predicted displacement in meters.
+    Calculate the predicted displacement in meters. If displacement is less than 1 mm (0.001 m),
+    returns zero.
 
     Parameters
     ----------
@@ -117,9 +118,9 @@ def calc_displ_site(
     Y_folded = np.mean([Y_site, Y_complement], axis=0)
 
     # Back-transform displacement to meters
-    displ_site_meters = np.power(Y_site * bc_param + 1, 1 / bc_param)
-    displ_complement_meters = np.power(Y_complement * bc_param + 1, 1 / bc_param)  # noqa: F841
-    displ_folded_meters = np.power(Y_folded * bc_param + 1, 1 / bc_param)
+    displ_site_meters = _convert_bc_to_meters(Y_site, bc_param)
+    displ_complement_meters = _convert_bc_to_meters(Y_complement, bc_param)  # noqa: F841
+    displ_folded_meters = _convert_bc_to_meters(Y_folded, bc_param)
 
     if debug:
         if override:
