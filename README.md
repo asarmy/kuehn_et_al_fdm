@@ -9,15 +9,15 @@
 | src/kuehn\_et\_al\_fdm/\_help.py                    |        2 |        1 |     50% |        50 |
 | src/kuehn\_et\_al\_fdm/calc\_displ\_avg.py          |       31 |        7 |     77% |89-99, 103 |
 | src/kuehn\_et\_al\_fdm/calc\_displ\_profile.py      |       35 |        9 |     74% |103-116, 120 |
-| src/kuehn\_et\_al\_fdm/calc\_displ\_site.py         |       43 |       10 |     77% |126, 159-173, 177 |
+| src/kuehn\_et\_al\_fdm/calc\_displ\_site.py         |       43 |       10 |     77% |127, 160-174, 178 |
 | src/kuehn\_et\_al\_fdm/calc\_params.py              |       47 |       10 |     79% |107, 135-148, 152 |
 | src/kuehn\_et\_al\_fdm/calc\_prob\_exceed.py        |       72 |       35 |     51% |21-75, 202, 206-215, 220, 244-261 |
 | src/kuehn\_et\_al\_fdm/calc\_prob\_occur.py         |       40 |        8 |     80% |74, 123-130, 134 |
 | src/kuehn\_et\_al\_fdm/load\_data.py                |       26 |        3 |     88% | 53, 57-58 |
 | src/kuehn\_et\_al\_fdm/prediction\_functions.py     |       56 |        3 |     95% |153-154, 159 |
-| src/kuehn\_et\_al\_fdm/transformation\_functions.py |       10 |        0 |    100% |           |
+| src/kuehn\_et\_al\_fdm/transformation\_functions.py |       14 |        0 |    100% |           |
 | src/kuehn\_et\_al\_fdm/utilities.py                 |       24 |        1 |     96% |        22 |
-|                                           **TOTAL** |  **431** |   **91** | **79%** |           |
+|                                           **TOTAL** |  **435** |   **91** | **79%** |           |
 
 
 ## Setup coverage badge
