@@ -19,7 +19,6 @@ Welcome to kuehn_et_al_fdm's Documentation!
    changelog
    repo
    authors
-   references
 
 
 Indices and tables
