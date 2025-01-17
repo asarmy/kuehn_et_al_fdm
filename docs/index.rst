@@ -17,6 +17,7 @@ Welcome to kuehn_et_al_fdm's Documentation!
    usage
    kuehn_et_al_fdm
    changelog
+   repo
    authors
    references
 
