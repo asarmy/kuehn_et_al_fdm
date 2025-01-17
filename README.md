@@ -5,10 +5,8 @@
 ![Coverage](https://github.com/asarmy/kuehn_et_al_fdm/raw/coverage-data-branch/badge.svg)
 [![Documentation Status](https://readthedocs.org/projects/kuehn-et-al-fdm/badge/?version=latest)](https://kuehn-et-al-fdm.readthedocs.io/en/latest/)
 [![DOI](https://zenodo.org/badge/841573158.svg)](https://zenodo.org/doi/10.5281/zenodo.13308173)
-<!--
-![Test PyPI](https://img.shields.io/badge/test-pypi-v1.0.0-blue)
-![Downloads](https://img.shields.io/badge/test-pypi-downloads-lightgrey)
--->
+[![PyPI version](https://img.shields.io/pypi/v/fdhpy.svg)](https://pypi.org/project/kuehn-et-al-fdm/)
+![Downloads](https://pepy.tech/badge/kuehn-et-al-fdm)
 
 ## Overview
 
